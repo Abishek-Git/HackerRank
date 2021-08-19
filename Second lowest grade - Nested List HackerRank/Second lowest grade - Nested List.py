@@ -27,6 +27,12 @@ for i in points:
         temp = float(i)
         break
 
+final_list = []
 for item in data:
     if(float(item[1]) == temp):
-        print(item[0])
+        final_list.append(item[0])
+
+
+final_list.sort()
+for itm in final_list:
+    print(itm)
