@@ -1,5 +1,30 @@
-import numpy
-numpy.set_printoptions(legacy = '1.13')
-N, M = map(int, input().split())
+"""
+    https://www.hackerrank.com/challenges/input/problem
+        HACKERRANK
+    Practice > Python > Build-ins > input()
 
-print(numpy.eye(N,M,k = 0))
+------------------input()---------------------
+
+Input Format
+
+The first line contains the space separated values of x and k.
+The second line contains the polynomial P.
+
+Output Format
+
+Print True if O(x) = k. Otherwise, print False.
+
+Sample Input
+
+1 4
+x**3 + x**2 + x + 1
+
+Sample Output
+
+True
+
+
+"""
+x, k = map(int, input().split())
+print((True if(eval(input()) == k) else False))
+
